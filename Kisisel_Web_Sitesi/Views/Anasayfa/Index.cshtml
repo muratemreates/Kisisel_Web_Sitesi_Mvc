@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murat Emre Ateş | Ana Sayfa</title>
+    <link rel="stylesheet" href="~/web-Web Sitem/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+<div class="row" id="satir1">
+    <div class="column" id="ben">
+            
+        <div class="content" id="yazi">
+            <h1>Murat Emre Ateş</h1>
+            <h2>Backend Developer</h2>
+                
+        </div> 
+    </div>
+    <div class="column" id="hakkimda">  
+        <p>ABOUT ME</p> 
+    </div>
+    <script>
+        document.getElementById("hakkimda").addEventListener("click", function() {
+            window.location.href = "@Url.Action("Hakkimda","Anasayfa")"; // Yönlendirilecek URL'yi belirtin
+});
+    </script>   
+</div>
+
+
+<div class="row" id="satir2">
+    <div class="column" id="skills"> SKILLS</div>
+    <div class="column" id="works">WORKS</div>
+    <div class="column" id="contact">CONTACT</div>
+    <script>
+            document.getElementById("skills").addEventListener("click", function() {
+        window.location.href = "@Url.Action("Skills","Anasayfa")"; // Yönlendirilecek URL'yi belirtin
+    });
+    document.getElementById("works").addEventListener("click", function() {
+        window.location.href = "@Url.Action("Works","Anasayfa")"; // Yönlendirilecek URL'yi belirtin
+    });
+    document.getElementById("contact").addEventListener("click", function() {
+        window.location.href = "@Url.Action("Contact","Anasayfa")"; // Yönlendirilecek URL'yi belirtin
+    });
+        </script>   
+
+</div>
+</body>
+</html>
